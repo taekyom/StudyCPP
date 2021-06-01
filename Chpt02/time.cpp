@@ -19,8 +19,8 @@ public:
 
 int main()
 {
-	Time now;	//Time형의 객체now 선언
-
+	Time now;	//타입이 Time인 객체 now(변수) 선언
+				//객체=변수, 클래스 타입으로 선언된 변수=인스턴스
 	now.SetTime(12, 30, 40);
 	now.OutTime();
 }

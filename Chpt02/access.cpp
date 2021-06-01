@@ -4,7 +4,7 @@
 
 struct Human //캡슐화, 추상화
 {
-private: //은닉
+private: //은닉(은폐) : 구조체 외부에서 멤버변수 초기화 및 수정 불가능하게 함
 	char name[12];
 	int age;
 public:
@@ -17,5 +17,6 @@ public:
 int main()
 {
 	Human lee;
+	//lee.age = 28; //불가능
 	lee.intro();
 }

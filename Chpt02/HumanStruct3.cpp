@@ -5,11 +5,11 @@ struct Human
 	char name[12];
 	int age;
 
-	void intro();	//멤버함수 원형 선언
+	void intro();	//멤버함수 원형만 선언
 };
 
 //멤버 함수의 외부 작성
-void Human::intro()	//Human 구조체에 속한 intro함수, 본체 정의
+void Human::intro()	//Human 구조체에 속한 intro함수 → 외부에 본체 정의(구조체::멤버함수이름)
 {
 	printf("이름 = %s, 나이 = %d\n", name, age);
 }

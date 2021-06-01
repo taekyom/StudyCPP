@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="access.cpp" />
+    <ClCompile Include="HumanClass.cpp" />
+    <ClCompile Include="HumanStruct2.cpp" />
     <ClCompile Include="HumanStruct3.cpp" />
     <ClCompile Include="HumanType.cpp" />
     <ClCompile Include="self_test2.cpp" />
