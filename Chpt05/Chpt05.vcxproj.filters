@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mutable.cpp">
+    <ClCompile Include="operator3_test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
