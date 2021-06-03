@@ -31,6 +31,13 @@ public:
 
 		return mt;
 	}
+
+	const MyTest& operator =(const MyTest& other)
+	{
+		x = other.x;
+		y = other.y;
+		return *this;
+	}
 };
 
 int main()
@@ -39,7 +46,8 @@ int main()
 	MyTest m2(20, 30);
 	MyTest m3;
 	m3 = m1 + m2; //operator+함수를 사용했으므로 +기호를 사용한 연산 가능
-	
+	m3 = m1.operator=(m2);
+
 	m3.printData();
 	return 0;
 }
