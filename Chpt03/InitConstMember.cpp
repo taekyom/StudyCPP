@@ -3,8 +3,8 @@
 class Some
 {
 public:
-	const int total;	//const 예약어(형변환)은 선언과 동시에 초기화하지 않으면 그 후에 초기화 불가능
-	Some(int atotal) : total(atotal) {}	//초기화 리스트 방식
+	const int total;	//const 예약어(형변환)는 선언과 동시에 초기화하지 않으면 그 후에 초기화 불가능
+	Some(int atotal) : total(atotal) {}	//초기화 리스트 방식(콜론 초기화)
 	/*Some(int atotal)  //일반적인 대입연산을 통한 초기화 방식 불가능
 	{
 		total = atotal;

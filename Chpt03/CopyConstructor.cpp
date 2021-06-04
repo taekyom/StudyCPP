@@ -12,18 +12,26 @@ private:
 public:
 	Human(const char* aname, int aage)
 	{
-		pname = new char[strlen(aname) + 1];
+		pname = new char[strlen(aname) + 1]; //동적할당
 		strcpy(pname, aname);
 		age = aage;
 	}
-	Human(const Human& other)
+	Human(const Human& other) //복사 생성자 : 같은 타입의 다른 객체에 대한 레퍼런스를 받음, 값으로 받으면 무한루프
 	{
 		pname = new char[strlen(other.pname) + 1];
 		strcpy(pname, other.pname);
 		age = other.age;
 	}
+	//복사 생성자가 자기 자신을 종료 조건없이 무한히 재귀호출
+	/*Human(Human other)
+	{
+		pname = new char[strlen(other.pname) + 1];
+		strcpy(pname, other.pname);
+		age = other.age;
+	}*/
 
-	~Human()
+
+	~Human() //동적할당 해제
 	{
 		delete[]pname;
 	}

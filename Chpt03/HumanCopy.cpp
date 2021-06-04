@@ -8,14 +8,14 @@ private:
 	char* pname;
 	int age;
 public:
-	Human(const char* aname, int aage)
+	Human(const char* aname, int aage) //포인터 변수 → 포인터로, 배열 → 포인터로
 	{
-		pname = new char[strlen(aname) + 1];
+		pname = new char[strlen(aname) + 1]; //배열의 동적할당
 		strcpy(pname, aname);
 		age = aage;
 	}
 
-	~Human()
+	~Human() //동적할당 해제
 	{
 		delete[]pname;
 	}
