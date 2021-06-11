@@ -29,7 +29,7 @@ int main()
 	int count = 0;
 	int size = sizeof(ary) / sizeof(ary[0]);
 
-	for (int i = 0; i < size; i++)					 //포인터 배열 전체크기를 포인터의 크기로 나눔 -> 요소 개수
+	for (int i = 0; i < size; i++)		  //포인터 배열 전체크기를 포인터의 크기로 나눔 -> 요소 개수
 	{
 		ary[i] = malloc(sizeof(Fitness)); //배열 ary를 heap영역에 저장, 메모리 동적 할당
 
@@ -49,8 +49,8 @@ int main()
 
 			//출력
 			print_info(ary, i);
-			total_number(count);									 //총 회원수
-			printf("평균 체중 : %lf kg\n", average_weight(ary, count)); //평균체중
+			total_number(count);											  //총 회원수
+			printf("평균 체중 : %lf kg\n", average_weight(ary, count));		  //평균체중
 			printf("최고 체중 : %s(%lf kg)\n", ary[i]->name, ary[i]->weight); //최고체중을 가진 회원 정보
 			printf("***********************************\n\n");
 		}
